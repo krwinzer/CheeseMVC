@@ -1,0 +1,20 @@
+﻿@model CheeseMVC.ViewModels.AddEditCheeseViewModel
+
+<h1>Edit Cheese</h1>
+
+<form asp-controller="Cheese" asp-action="Edit" method="post">
+
+    <input type="hidden" asp-for="cheeseId" />  
+    
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input class="form-control" asp-for="Name" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input class="form-control" asp-for="Description" />
+    </div>
+
+    <input type="submit" value="Edit Cheese" />
+
+</form>
